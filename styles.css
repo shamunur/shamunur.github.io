@@ -1,60 +1,102 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic Styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation */
 nav {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-nav ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
-}
-nav ul li {
-    margin: 0 10px;
-}
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-/* Hero Section */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
 .hero {
-    background: #f4f4f4;
-    text-align: center;
-    padding: 100px 0;
-}
-.hero h2 {
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background 0.3s ease;
+.hero-content {
+    max-width: 500px;
 }
-.btn:hover {
-    background: #555;
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #333;
+}
+
+.hero-content h1 span {
+    color: #ff6600;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:nth-child(1) {
+    background-color: #333;
+    color: #fff;
+}
+
+button:nth-child(2) {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 32px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.hero-image img {
+    width: 300px;
+    border-radius: 50%;
 }
