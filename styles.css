@@ -37,6 +37,10 @@ nav {
     font-weight: 500;
 }
 
+.nav-links li a:hover {
+    color: red; /* Hover color for nav links */
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -46,10 +50,12 @@ nav {
 
 .hero-content {
     max-width: 500px;
+    position:relative;
+    right: 15rem;
 }
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 25px;
     margin: 0;
     color: #333;
 }
@@ -73,16 +79,25 @@ button {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-button:nth-child(1) {
-    background-color: #333;
+.download-cv {
+    background-color: black;
     color: #fff;
 }
 
-button:nth-child(2) {
+.download-cv:hover {
+    background-color: orange; /* Hover effect */
+}
+
+.chat-now {
     background-color: #28a745;
     color: #fff;
+}
+
+.chat-now:hover {
+    background-color: green; /* Hover effect */
 }
 
 .social-links {
@@ -97,6 +112,158 @@ button:nth-child(2) {
 }
 
 .hero-image img {
-    width: 300px;
+    width: 350px;
     border-radius: 50%;
+}
+
+/* Existing styles */
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 32px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Hover effect for all social links */
+.social-links a:hover {
+    color: orange; /* General hover color for all icons */
+}
+
+/* Specific hover effect for Facebook icon */
+.social-links a:nth-child(4):hover {
+    color: orange; /* Turns orange when hovered over Facebook */
+}
+
+/* Style for the buttons */
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Green by default for both buttons */
+.chat-now {
+    background-color: #28a745; /* Green color */
+    color: #fff;
+}
+
+/* Hover effect - turns orange when hovered */
+.download-cv:hover, .chat-now:hover {
+    background-color: orange; /* Hover color is orange */
+}
+
+/* Navigation menu styles */
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; /* Makes the text bold */
+    font-size: 16px; /* Adjust the font size if needed */
+    padding: 10px;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+/* Header section */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    font-weight: bold; /* Makes navigation text bold */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+/* Hover effect on nav links */
+.nav-links a:hover {
+    color: red; /* Changes color to red on hover */
+}
+
+/* Hero section with image */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f0f2f5;
+    overflow: hidden;
+}
+
+/* Profile image styling */
+.profile-pic {
+    width: 300px;
+    height: auto
+}
+
+/* New photo frame styling */
+.photo-frame {
+    width: 350px;
+    height: 350px;
+    background-color: #fff; /* White background for the frame */
+    border-radius: 50%; /* Circular frame */
+    padding: 10px; /* Space between frame and image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for a floating effect */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin: 0 auto; /* Centering the frame */
+}
+
+.new-photo-design {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensures the image stays circular */
+    object-fit: cover; /* Scales the image to fit the frame */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for photo frame */
+.photo-frame:hover {
+    transform: translateY(-10px); /* Lifts the image slightly on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow to enhance the floating effect */
+}
+
+/* Optional: Glow effect on hover */
+.new-photo-design:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7); /* Adds a soft orange glow */
+}
+
+/* Adjusting the hero section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #f9f9f9;
 }
